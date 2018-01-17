@@ -22,8 +22,8 @@
 				<div class="companyInfo-info bb1 bg0 clearfix">
 					<div class="companyInfo-info-left fl">
 						<div class="companyInfo-info-left-box">
-							<h2><img src="../../assets/img/ht_manager_ic@2x.png"/><span>管理员</span>&nbsp;<i>{{teamInfo.userName}}</i></h2>
-							<h2><img src="../../assets/img/ht_phone_ic@2x.png"/><span>手机号</span>&nbsp;<i>{{teamInfo.userPhone | phonefilter(3)}}</i></h2>
+							<h2><img src="../../../assets/img/ht_manager_ic@2x.png"/><span>管理员</span>&nbsp;<i>{{teamInfo.userName}}</i></h2>
+							<h2><img src="../../../assets/img/ht_phone_ic@2x.png"/><span>手机号</span>&nbsp;<i>{{teamInfo.userPhone | phonefilter(3)}}</i></h2>
 						</div>
 					</div>
 					<div class="companyInfo-info-right fr">
@@ -37,7 +37,7 @@
 				</div>
 				<router-link tag="div" :to="{'name':'addMember'}" class="add f28 clearfix" >
 					<p class="fl">添加新成员</p>
-					<p class="fr"><span>点击此处添加</span><img src="../../assets/img/more_ico@2x.png"/></p>
+					<p class="fr"><span>点击此处添加</span><img src="../../../assets/img/more_ico@2x.png"/></p>
 				</router-link>
 				 <div class="page-loadmore">
 	            <div class="page-loadmore-wrapper" ref="wrapper">
@@ -68,7 +68,7 @@
 							<div class="twitter-info-right fr">
 								<span class="f28">成交笔数&nbsp;&nbsp;<i class="fwb">{{item.dealCount}}</i></span>
 								<div class="phone fr">
-									<a :href="'tel:'+item.twitterPhone"><img src="../../assets/img/ht_call_ic@2x.png"/></a>
+									<a :href="'tel:'+item.twitterPhone"><img src="../../../assets/img/ht_call_ic@2x.png"/></a>
 								</div>
 							</div>
 						</div>
@@ -79,7 +79,7 @@
 								<p v-else class="f24" >点击填写备忘录</p>
 							</div>
 							<div class="memo-right fr">
-								<img src="../../assets/img/more_ico@2x.png"/>
+								<img src="../../../assets/img/more_ico@2x.png"/>
 							</div>
 						</div>
 					</dd>

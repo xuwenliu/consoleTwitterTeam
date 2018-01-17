@@ -16,11 +16,11 @@ export default {
   	margin: 2.66666rem 0 0 -1.72666rem;
   	text-align: center;
 	  	img{
-	  	width: 3.44rem;
-	  	height: 3.44rem;
+	  	width: 3.32rem;
+	  	height: 2.17333rem;
 	}
 	p{
-		display:block;width: 3.44rem;color: #A8A8A8;
+		display:block;color: #A8A8A8;
 	}
 	
 }

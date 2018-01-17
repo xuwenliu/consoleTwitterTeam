@@ -3,7 +3,7 @@
     	<title>佣金明细</title>
 		<div>
 			<NoFile v-show="!listData.length">
-		        <img slot="bgimg" src="../../assets/img/no_money_ic@2x.png">
+		        <img slot="bgimg" style="width: 3.44rem;height: 3.44rem;" src="../../../assets/img/no_money_ic@2x.png">
 		        <span slot="info">您还没有获得佣金</span>
 		    </NoFile>
 	    	<div class="page-loadmore" v-show="listData.length">
@@ -70,7 +70,7 @@
 import {MessageBox} from 'mint-ui';
 import {Indicator} from 'mint-ui';
 import {Toast} from 'mint-ui';
-import NoFile from '../../components/NoFile'
+import NoFile from '../../../components/NoFile'
 export default{
     name: 'commissionDetails',
     components: {
@@ -78,7 +78,7 @@ export default{
     },
     data(){
       	return {
-			spreadListStatusArr:[require('../../assets/img/close_list_ic@2x.png'),require('../../assets/img/open_list_ic@2x.png')],//下拉菜单箭头
+			spreadListStatusArr:[require('../../../assets/img/close_list_ic@2x.png'),require('../../../assets/img/open_list_ic@2x.png')],//下拉菜单箭头
 			allLoaded: false,
         	bottomStatus: '',
         	topStatus:"",
