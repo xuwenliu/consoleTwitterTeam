@@ -5,7 +5,7 @@
 		<div class="earnings">
 			<div class="money">
 				<p class="F3 C1">总佣金(元) 
-				<img src="../../assets/img/info_note_ic@3x.png" @click="changeShow"> </p>
+				<img src="../../../assets/img/info_note_ic@3x.png" @click="changeShow"> </p>
 				<h1 class="money-total C1 fwb">{{baseData.commissionTotal | currency('',2)}}</h1> 
 				<router-link tag="button" :to="{'name':'commissionDetails'}">查看明细</router-link>
 			</div>
@@ -13,12 +13,12 @@
 				<router-link tag="li" :to="{'name':'commissionRecord',query:{teamId:baseData.teamId}}">
 					<div class="money-list-box clearfix bb1">
 						<div class="money-left">
-							<img src="../../assets/img/money_done_ic@2x.png">
+							<img src="../../../assets/img/money_done_ic@2x.png">
 							<span class="C1">已结佣</span>
 						</div>
 						<div class="money-right">
 							<span class="F2 C1 fwb">{{baseData.settledTotal | currency('',2)}}</span> 
-							<img src="../../assets/img/more_ico@2x.png" alt="">
+							<img src="../../../assets/img/more_ico@2x.png" alt="">
 						</div>
 					</div>
 					
@@ -27,7 +27,7 @@
 				<li class="bb1">
 					<div class="money-list-box clearfix">
 						<div class="money-left">
-							<img src="../../assets/img/money_wait_pay_ic@2x.png">
+							<img src="../../../assets/img/money_wait_pay_ic@2x.png">
 							<span class="C1">待结佣</span>
 						</div>
 						<div class="money-right-dai">
@@ -42,11 +42,11 @@
 				<router-link class="bb1" style="margin-top: 0.333333rem;" tag="li" :to="{'name':'ruleDesc'}">
 					<div class="money-list-box clearfix">
 						<div class="money-left">
-							<img style="width: 0.46666rem;height: 0.53333rem;" src="../../assets/img/ht_ruels_info_ic@2x.png">
+							<img style="width: 0.46666rem;height: 0.53333rem;" src="../../../assets/img/ht_ruels_info_ic@2x.png">
 							<span class="C1">分佣规则说明</span>
 						</div>
 						<div class="money-right">
-							<img src="../../assets/img/more_ico@2x.png">
+							<img src="../../../assets/img/more_ico@2x.png">
 						</div>
 					</div>	
 				</router-link>
@@ -61,7 +61,7 @@
 import {MessageBox} from 'mint-ui';
 import {Indicator} from 'mint-ui';
 import {Toast} from 'mint-ui';
-import ToastMsg from '../../components/Toast'
+import ToastMsg from '../../../components/Toast'
 export default{
     name: 'earnings',
     components: {

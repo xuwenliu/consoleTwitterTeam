@@ -4,7 +4,7 @@
 		<div>
 			<!-- 没有结佣记录 -->
             <NoFile v-show="!listData.length">
-                <img slot="bgimg"  src="../../assets/img/no_details_ic@2x.png">
+                <img slot="bgimg" style="width: 3.44rem;height: 3.44rem;" src="../../../assets/img/no_details_ic@2x.png">
                 <span slot="info">您还没有结佣记录</span>
             </NoFile>
             <div class="page-loadmore" v-show="listData.length">
@@ -37,7 +37,7 @@
 		            		</div>
 		            		<router-link tag="div" :to="{'name':'commissionVoucher',query:{credential:i.credential}}"  class="commissionDetails-list-right">
 		            			<span class="F2 C1 fwb">{{i.transferAmount | currency("",2)}}</span>
-								<img src="../../assets/img/more_ico@2x.png" alt="">
+								<img src="../../../assets/img/more_ico@2x.png" alt="">
 		            		</router-link>
 		            	</dd>
 		            </dl>		            
@@ -52,7 +52,7 @@
 import {MessageBox} from 'mint-ui';
 import {Indicator} from 'mint-ui';
 import {Toast} from 'mint-ui';
-import NoFile from '../../components/NoFile'
+import NoFile from '../../../components/NoFile'
 export default{
     name: 'commissionRecord',
     components: {
@@ -198,7 +198,7 @@ export default{
      	loadTop() {
      		this.page = 1;
           	setTimeout(() => {
-          		this.getDataList(this.routeType);
+          		this.getDataList();
                 this.$refs.loadmore.onTopLoaded();
                 document.querySelector(".mint-loadmore-bottom").style.display="none";
                 this.allLoaded = false;

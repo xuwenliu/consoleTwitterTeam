@@ -1,18 +1,19 @@
 /* 16-vue */
-var version = "v1.11.0";
+var version = "v1.12.0";
 
-/*推客团队v1.0.0 对应 c端app v1.11.0*/
+/* 推客团队v1.0.0 对应 c端app v1.11.0
+ * 推客团队v1.1.0 对应 c端app v1.12.0*/
 
 window.Host = {
-//	apiHost: "http://192.168.28.78:8182/v3" //lf本机
+//	apiHost: "http://192.168.28.78:8182/v4" //lf本机
 
-//	apiHost: "https://devcustomer.yingwumeijia.com/v3",  // dev
-	
-//	apiHost: "https://testcustomer.yingwumeijia.com/v3",  // test
+//	apiHost: "https://devcustomer.yingwumeijia.com/v4",  // dev
 
-//	apiHost: "https://precustomer.yingwumeijia.com/v3",  // pre
+//	apiHost: "https://testcustomer.yingwumeijia.com/v4",  // test
 
-	apiHost: "https://customer.yingwumeijia.com/v3",  // pro
+	apiHost: "https://precustomer.yingwumeijia.com/v4",  // pre
 
-	
+	// apiHost: "https://customer.yingwumeijia.com/v4",  // pro
+
+
 }
